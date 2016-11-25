@@ -17,7 +17,11 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-body, .navbar {
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar, .home-callout {
   // Gradient provided by @ uigradients.com
   background: #DAE2F8; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #DAE2F8 , #D6A4A4); /* Chrome 10-25, Safari 5.1-6 */
@@ -28,6 +32,8 @@ body, .navbar {
   border: none;
 }
 
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+.home-callout {
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
