@@ -17,10 +17,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+// Typography Styles
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
 }
 
+// Background Gradient
 .navbar, .home-callout {
   // Gradient provided by @_ighosh uigradients.com
   background: #DAE2F8; /* fallback for old browsers */
@@ -28,28 +30,21 @@ h1, h2, h3 {
   background: linear-gradient(to left, #DAE2F8 , #D6A4A4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Nav Styles
 .navbar {
   border: none;
 }
 
-.navbar-default .navbar-brand {
-  color: #333333;
-}
-
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: #333333;
+  & :hover {
+    color: #333333;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-brand:hover {
-  color: #333333;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: #333333;
-  opacity: 0.75;
-}
-
+// Home Page Styles
 .home-callout {
   margin-top: -20px;
   padding-top: 50px;
