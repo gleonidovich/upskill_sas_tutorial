@@ -46,9 +46,20 @@ h1, h2, h3 {
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: #333333;
-  & :hover {
+  &:hover {
     color: #333333;
     opacity: 0.75;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #333333;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid #333333;
+  &:hover, &:focus {
+    background-color: #DAE2F8;
   }
 }
 
