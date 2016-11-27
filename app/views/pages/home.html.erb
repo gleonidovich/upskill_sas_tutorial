@@ -9,7 +9,8 @@
         <h2 class="text-center">Basic Membership</h2>
         <h4 class="text-center">For basic access to the community.</h4>
         <br/>
-        <%= link_to "Free", "#", class: "btn btn-primary btn-lg btn-block" %>
+        <%= link_to "Free", new_user_registration_path(plan: @basic_plan.id), 
+        class: "btn btn-primary btn-lg btn-block" %>
       </div>
     </div>
     <div class="col-md-6">
@@ -18,7 +19,8 @@
         <h4 class="text-center">For access to the community with exclusive 
         contacting features.</h4>
         <br/>
-        <%= link_to "$10 per month", "#", class: "btn btn-success btn-lg btn-block" %>
+        <%= link_to "$10 per month", new_user_registration_path(plan: @pro_plan.id), 
+        class: "btn btn-success btn-lg btn-block" %>
       </div>
     </div>
   </div>
