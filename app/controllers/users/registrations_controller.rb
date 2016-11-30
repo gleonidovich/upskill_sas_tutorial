@@ -1,4 +1,7 @@
 class Users::RegistrationsController < Devise::RegistrationsController
+  # extend the default create method in Devise so that users
+  # signing up with Pro account save with a Stripe subscription function
+  # otherwise Devise signs up as usual
   def create
     super do |resource|
       if params[:plan]
